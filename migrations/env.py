@@ -10,10 +10,6 @@ from app.db.database import Base
 import app.models
 
 config = context.config
-print("=" * 80)
-print("Alembic URL:", settings.database_url)
-print("Config URL:", config.get_main_option("sqlalchemy.url"))
-print("=" * 80)
 
 config.set_main_option(
     "sqlalchemy.url",
